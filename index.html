@@ -1,909 +1,557 @@
 <!DOCTYPE html>
-<!-- saved from url=(0026)http://www.rvquizcorp.com/ -->
-<html lang="en-US" style="" class=" js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers no-applicationcache svg inlinesvg smil svgclippaths"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>R V QuizCorp</title>
-    <link rel="shortcut icon" href="./static/rvquizcorp/img/favicon.ico" type="image/x-icon">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="RV QuizCorp is one of India's biggest quiz clubs and conducts Asia's Largest Quiz Fest, Under The Peepal Tree.">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
 
-    <link rel="stylesheet" type="text/css" media="all" href="./static/rvquizcorp/css/index_1.css">
-    <link rel="stylesheet" type="text/css" media="all" href="./static/rvquizcorp/css/index_2.css">
-
-    <link rel="stylesheet" type="text/css" media="all" href="./static/rvquizcorp/css/motioncss.css">
-    <link rel="stylesheet" type="text/css" media="all" href="./static/rvquizcorp/css/motioncss-widgets.css">
-
-    <link rel="stylesheet" type="text/css" media="all" href="./static/rvquizcorp/font-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" media="all" href="./static/rvquizcorp/css/magnific-popup.css">
-    <link rel="stylesheet" type="text/css" media="all" href="./static/rvquizcorp/css/jquery.jgrowl.css">
-    <link rel="stylesheet" type="text/css" media="all" href="./static/rvquizcorp/css/style.css">
-    <link rel="stylesheet" type="text/css" media="all" href="./static/rvquizcorp/css/responsive.css">
-    <link rel="stylesheet" type="text/css" media="all" href="./static/rvquizcorp/css/color_6.css">
-
-    <script type="text/javascript" src="./static/rvquizcorp/js/jquery-1.8.3.js"></script>
-    <script type="text/javascript" src="./static/rvquizcorp/js/modernizr.js"></script>
-    <script type="text/javascript" src="./static/rvquizcorp/js/mediaelement-and-player.js"></script>
-    <script type="text/javascript" src="./static/rvquizcorp/js/jquery.easing.min.js"></script>
-    <script type="text/javascript" src="./static/rvquizcorp/js/jquery.carousello.js"></script>
-    <script type="text/javascript" src="./static/rvquizcorp/js/jquery.isotope.js"></script>
-    <script type="text/javascript" src="./static/rvquizcorp/js/jquery.magnific-popup.js"></script>
-    <script type="text/javascript" src="./static/rvquizcorp/js/jquery.jgrowl.js"></script>
-    <script type="text/javascript" src="./static/rvquizcorp/js/jquery.parallax.js"></script>
-    <script type="text/javascript" src="./static/rvquizcorp/js/jquery.queryloader2.js"></script>
-    <script type="text/javascript" src="./static/rvquizcorp/js/waypoints.min.js"></script>
-    <script type="text/javascript" src="./static/rvquizcorp/js/responsive.js"></script>
-    <script type="text/javascript" src="./static/rvquizcorp/js/plugins.js"></script>
-    <script type="text/javascript" src="./static/rvquizcorp/js/us.widgets.js"></script>
-
-    <!-- GMap-->
-    <script type="text/javascript" src="./static/rvquizcorp/js/gmaps.js/"></script>
-    <script type="text/javascript" src="./static/rvquizcorp/js/jquery.gmap.min.js"></script>
-    <script type="text/javascript">
-        jQuery(document).ready(function(){
-            jQuery('.w-map-h').gMap({
-                controls: {
-                    panControl: true,
-                    zoomControl: true,
-                    mapTypeControl: true,
-                    scaleControl: true,
-                    streetViewControl: false,
-                    overviewMapControl: false
-                },
-                address: "R V College of Engineering, Bangalore",
-                zoom: 13,
-                latitude: 12.924427947,
-                longitude: 77.499876022,
-                markers:[
-                    {
-                         latitude: 12.924427947,
-                         longitude: 77.499876022,
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#e74c3c',
+                        'primary-dark': '#c0392b',
+                        dark: '#1a1a2e',
+                        darker: '#16213e',
                     },
-                    {
-                        address: "R V College of Engineering, Bangalore",
-                       // html: "Join us!",
-                        popup: true
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', 'sans-serif'],
+                        display: ['"Playfair Display"', 'Georgia', 'serif'],
                     }
-                ]
-            });
-        });
+                }
+            }
+        }
     </script>
 
-    <script type="text/javascript" src="./static/rvquizcorp/js/supersized.3.2.7.js"></script>
-    <script type="text/javascript" src="./static/rvquizcorp/js/supersized.shutter.js"></script>
+    <!-- Font Awesome 6 CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
-<script type="text/javascript" charset="UTF-8" src="./static/rvquizcorp/js/common.js"></script><script type="text/javascript" charset="UTF-8" src="./static/rvquizcorp/js/util.js"></script></head>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
 
-<body class="l-body headertype_sticky headerpos_outside hometype_fullscreen">
+    <style>
+        /* Parallax sections */
+        .parallax-bg {
+            background-attachment: fixed;
+            background-size: cover;
+            background-position: center;
+        }
+        @supports (-webkit-touch-callout: none) {
+            .parallax-bg { background-attachment: scroll; }
+        }
 
-<!-- HEADER -->
-<div class="l-header" style="top: 0px; position: fixed;">
-    <div class="l-header-h">
+        /* Scroll animations */
+        .fade-up {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+        .fade-up.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
 
-        <!-- subheader -->
-        <div class="l-subheader">
-            <div class="l-subheader-h i-cf">
+        /* Dialog backdrop */
+        dialog::backdrop {
+            background: rgba(0, 0, 0, 0.75);
+        }
+        dialog {
+            border: none;
+            padding: 0;
+            max-width: 90vw;
+            max-height: 90vh;
+            border-radius: 0.75rem;
+        }
 
-                <!-- logo -->
-                <div class="w-logo">
-                    <div class="w-logo-h">
-                        <a class="w-logo-link" href="#">
-                            <img class="w-logo-img" src="./static/rvquizcorp/img/qc_logo.png" alt="RVQC">
-                            <span class="w-logo-title">
-                                <span class="w-logo-title-h">R V QuizCorp</span>
-                            </span>
-                        </a>
-                    </div>
-                </div>
+        /* Portfolio hover */
+        .portfolio-card .portfolio-overlay {
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        .portfolio-card:hover .portfolio-overlay {
+            opacity: 1;
+        }
 
-                <!-- nav -->
-                <nav class="w-nav">
-                    <div class="w-nav-h">
-                        <div class="w-nav-control">
-                            <i class="fa fa-bars"></i>
-                        </div>
-                        <div class="w-nav-list layout_hor width_auto level_1">
-                            <div class="w-nav-list-h">
-                                <div class="w-nav-item level_1 with_sublevel">
-                                    <div class="w-nav-item-h">
-                                        <a href="#home" class="w-nav-anchor level_1"><span class="w-nav-title">Home</span><span class="w-nav-hint"></span></a>
-                                    </div>
-                                </div>
-                                <div class="w-nav-item level_1 active">
-                                    <div class="w-nav-item-h">
-                                        <a href="#about" class="w-nav-anchor level_1"><span class="w-nav-title">About</span><span class="w-nav-hint"></span></a>
-                                    </div>
-                                </div>
-                                <div class="w-nav-item level_1">
-                                    <div class="w-nav-item-h">
-                                        <a href="#utpt" class="w-nav-anchor level_1"><span class="w-nav-title">UTPT</span><span class="w-nav-hint"></span></a>
-                                    </div>
-                                </div>
-                                <div class="w-nav-item level_1">
-                                    <div class="w-nav-item-h">
-                                        <a href="#blog" class="w-nav-anchor level_1"><span class="w-nav-title">Blog</span><span class="w-nav-hint"></span></a>
-                                    </div>
-                                </div>
-                                <div class="w-nav-item level_1">
-                                    <div class="w-nav-item-h">
-                                        <a href="#contact" class="w-nav-anchor level_1"><span class="w-nav-title">Contact</span><span class="w-nav-hint"></span></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+        /* Nav link active indicator */
+        .nav-link {
+            position: relative;
+        }
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 50%;
+            width: 0;
+            height: 2px;
+            background: #e74c3c;
+            transition: width 0.3s ease, left 0.3s ease;
+        }
+        .nav-link.active::after {
+            width: 100%;
+            left: 0;
+        }
+    </style>
+</head>
+<body class="font-sans text-gray-800 antialiased">
+
+    <!-- HEADER / NAV -->
+    <header id="header" class="sticky top-0 z-50 bg-white/95 backdrop-blur-sm shadow-sm transition-shadow duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <!-- Logo -->
+                <a href="#home" class="flex items-center gap-3 shrink-0">
+                    <img src="img/qc_logo.png" alt="RVQC" class="h-10 w-auto">
+                    <span class="text-lg font-bold text-dark hidden sm:inline">R V QuizCorp</span>
+                </a>
+
+                <!-- Desktop Nav -->
+                <nav class="hidden md:flex items-center gap-8">
+                    <a href="#home" class="nav-link text-sm font-medium text-gray-600 hover:text-primary transition-colors">Home</a>
+                    <a href="#about" class="nav-link text-sm font-medium text-gray-600 hover:text-primary transition-colors">About</a>
+                    <a href="#utpt" class="nav-link text-sm font-medium text-gray-600 hover:text-primary transition-colors">UTPT</a>
+                    <a href="#blog" class="nav-link text-sm font-medium text-gray-600 hover:text-primary transition-colors">Blog</a>
+                    <a href="#contact" class="nav-link text-sm font-medium text-gray-600 hover:text-primary transition-colors">Contact</a>
                 </nav>
 
+                <!-- Mobile Hamburger -->
+                <button id="menu-toggle" class="md:hidden p-2 rounded-lg text-gray-600 hover:bg-gray-100 transition-colors" aria-label="Toggle menu" aria-expanded="false">
+                    <i class="fa-solid fa-bars text-xl" id="menu-icon"></i>
+                </button>
+            </div>
+
+            <!-- Mobile Nav -->
+            <nav id="mobile-nav" class="md:hidden hidden pb-4">
+                <div class="flex flex-col gap-1">
+                    <a href="#home" class="mobile-nav-link px-4 py-2 rounded-lg text-gray-600 hover:bg-gray-100 hover:text-primary transition-colors font-medium">Home</a>
+                    <a href="#about" class="mobile-nav-link px-4 py-2 rounded-lg text-gray-600 hover:bg-gray-100 hover:text-primary transition-colors font-medium">About</a>
+                    <a href="#utpt" class="mobile-nav-link px-4 py-2 rounded-lg text-gray-600 hover:bg-gray-100 hover:text-primary transition-colors font-medium">UTPT</a>
+                    <a href="#blog" class="mobile-nav-link px-4 py-2 rounded-lg text-gray-600 hover:bg-gray-100 hover:text-primary transition-colors font-medium">Blog</a>
+                    <a href="#contact" class="mobile-nav-link px-4 py-2 rounded-lg text-gray-600 hover:bg-gray-100 hover:text-primary transition-colors font-medium">Contact</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- HERO / HOME -->
+        <section id="home" class="relative min-h-screen flex items-center justify-center bg-cover bg-center" style="background-image: url('img/qc_banner.jpg');">
+            <div class="absolute inset-0 bg-black/60"></div>
+            <div class="relative z-10 text-center px-4">
+                <h1 class="fade-up">
+                    <span class="block text-white/90 text-lg sm:text-xl md:text-2xl font-light tracking-wide mb-3">R V College Of Engineering</span>
+                    <span class="block text-white text-4xl sm:text-5xl md:text-7xl font-display font-bold tracking-tight">R V QuizCorp</span>
+                </h1>
+                <div class="fade-up mt-8">
+                    <a href="#about" class="inline-flex items-center gap-2 bg-primary hover:bg-primary-dark text-white px-8 py-3 rounded-full text-sm font-semibold uppercase tracking-wider transition-colors shadow-lg hover:shadow-xl">
+                        <i class="fa-solid fa-arrow-down"></i>
+                        Learn More
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ABOUT -->
+        <section id="about" class="py-20 lg:py-28">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-12 fade-up">
+                    <h2 class="text-3xl md:text-4xl font-display font-bold text-dark">About R V QuizCorp</h2>
+                    <p class="mt-4 text-lg text-gray-600 max-w-3xl mx-auto">
+                        R V QuizCorp is one of India's <strong class="text-primary font-semibold">Biggest quiz clubs</strong>
+                        and conducts <strong class="text-primary font-semibold">Asia's Largest Quiz Fest</strong> Under The Peepal Tree
+                    </p>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-8 lg:gap-12 mb-16 fade-up">
+                    <p class="text-gray-600 leading-relaxed">R V QuizCorp is the quiz club of R V College of Engineering, one of the finest private institutions in the country. Since its inception in 1998, RVQC has evolved into one of the best known clubs in national quizzing circuits. Being one of the few quiz clubs in the country run entirely by students, we have created and nurtured many quizzers and quizmasters who are highly respected across the country. Our members assemble week after week at club's most popular hangout, "On the Rocks" in Cubbon Park, to discuss and plan future quizzes and to share interesting 'fundae'. To promote quizzing culture in RVCE and for the sheer thrill of quizzing, the members of RVQC also organise quizzes every month on topics as varied as sports, music, movies and politics.</p>
+                    <p class="text-gray-600 leading-relaxed">RVCE is the only institution in the country to have sent three teams to the prestigious BBC University Challenge Quiz hosted by Siddharth Basu on BBC World. A team consisting of final year students was invited for an exhibition round to kick off the inaugural season of the BBC University Challenge, where they were pitted against Glasgow University, U.K. Since then, two pre-final year teams have made it to the televised rounds in the inaugural season (2003) and the second season (2004). RVQC has dominated the quizzing scene not only in Bangalore but all over the country, winning quizzes at IITM, NLSIU, VIT, and NITK to name a few places. QuizCorp has also gained a reputation for conducting mind-boggling quizzes, having had some of India's most renowned quizmasters among the ranks at our prestigious club.</p>
+                </div>
+
+                <!-- Vimeo Embed -->
+                <div class="max-w-3xl mx-auto mb-16 fade-up">
+                    <div class="aspect-video rounded-xl overflow-hidden shadow-lg">
+                        <iframe src="https://player.vimeo.com/video/109492542" width="100%" height="100%" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen class="w-full h-full"></iframe>
+                    </div>
+                    <p class="text-center text-sm text-gray-500 mt-3">
+                        <a href="https://vimeo.com/109492542" class="hover:text-primary transition-colors">RV QuizCorp: Welcome Freshers of 2014!</a> from
+                        <a href="https://vimeo.com/rvquizcorp" class="hover:text-primary transition-colors">RV Quizcorp</a> on
+                        <a href="https://vimeo.com" class="hover:text-primary transition-colors">Vimeo</a>.
+                    </p>
+                </div>
+            </div>
+
+            <!-- What We Do - Dark Parallax Section -->
+            <div class="parallax-bg py-20 lg:py-28" style="background-image: url('img/qc_banner.jpg');">
+                <div class="relative">
+                    <div class="absolute inset-0 bg-dark/85"></div>
+                    <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white">
+                        <p class="text-lg text-gray-300 mb-2 fade-up">What do we do?</p>
+                        <h3 class="text-2xl md:text-3xl font-display font-bold text-primary mb-12 fade-up">We Quiz. We Learn. We Play.</h3>
+
+                        <div class="grid md:grid-cols-3 gap-8 lg:gap-12">
+                            <div class="fade-up">
+                                <div class="w-20 h-20 mx-auto mb-5 rounded-full bg-primary/20 flex items-center justify-center">
+                                    <i class="fa-solid fa-thumbs-up text-primary text-2xl"></i>
+                                </div>
+                                <h4 class="text-xl font-semibold mb-3">We Quiz</h4>
+                                <p class="text-gray-300 leading-relaxed">Members of RV QuizCorp have a reputation for being the best of best all over India</p>
+                            </div>
+                            <div class="fade-up">
+                                <div class="w-20 h-20 mx-auto mb-5 rounded-full bg-primary/20 flex items-center justify-center">
+                                    <i class="fa-solid fa-rocket text-primary text-2xl"></i>
+                                </div>
+                                <h4 class="text-xl font-semibold mb-3">UTPT</h4>
+                                <p class="text-gray-300 leading-relaxed">Our annual flagship event Under The Peepal Tree is Asia's Largest Quiz Fest.</p>
+                            </div>
+                            <div class="fade-up">
+                                <div class="w-20 h-20 mx-auto mb-5 rounded-full bg-primary/20 flex items-center justify-center">
+                                    <i class="fa-solid fa-heart text-primary text-2xl"></i>
+                                </div>
+                                <h4 class="text-xl font-semibold mb-3">Loads Of Fun!</h4>
+                                <p class="text-gray-300 leading-relaxed">Quizzing is something we love to do and are passionate about. We quiz to live and live to quiz.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- UTPT -->
+        <section id="utpt" class="py-20 lg:py-28">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-12 fade-up">
+                    <h2 class="text-3xl md:text-4xl font-display font-bold text-dark">Under the Peepal Tree</h2>
+                    <p class="mt-4 text-lg text-gray-600 max-w-3xl mx-auto">
+                        <strong>Asia's</strong> largest quiz fest &mdash; Be a part of 3 days of quizzing excellence!
+                    </p>
+                </div>
+
+                <!-- Vimeo Embed -->
+                <div class="max-w-3xl mx-auto mb-16 fade-up">
+                    <div class="aspect-video rounded-xl overflow-hidden shadow-lg">
+                        <iframe src="https://player.vimeo.com/video/155788038" width="100%" height="100%" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen class="w-full h-full"></iframe>
+                    </div>
+                    <p class="text-center text-sm text-gray-500 mt-3">
+                        <a href="https://vimeo.com/155788038" class="hover:text-primary transition-colors">Under The Peepal Tree - 2016 Teaser</a> from
+                        <a href="https://vimeo.com/rvquizcorp" class="hover:text-primary transition-colors">RV Quizcorp</a> on
+                        <a href="https://vimeo.com" class="hover:text-primary transition-colors">Vimeo</a>.
+                    </p>
+                </div>
+
+                <!-- Quiz Category Portfolio Grid -->
+                <div class="grid grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-6">
+
+                    <!-- About UTPT -->
+                    <div class="portfolio-card relative group rounded-xl overflow-hidden cursor-pointer aspect-square fade-up" data-dialog="dialog-about-utpt">
+                        <img src="img/about.jpg" alt="About UTPT" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                        <div class="portfolio-overlay absolute inset-0 bg-primary/80 flex flex-col items-center justify-center p-4">
+                            <i class="fa-solid fa-plus text-white text-3xl mb-3"></i>
+                            <h3 class="text-white text-lg font-bold text-center">About UTPT</h3>
+                        </div>
+                    </div>
+
+                    <!-- Indi-Genius -->
+                    <div class="portfolio-card relative group rounded-xl overflow-hidden cursor-pointer aspect-square fade-up" data-dialog="dialog-india">
+                        <img src="img/india.jpg" alt="Indi-Genius" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                        <div class="portfolio-overlay absolute inset-0 bg-primary/80 flex flex-col items-center justify-center p-4">
+                            <i class="fa-solid fa-plus text-white text-3xl mb-3"></i>
+                            <h3 class="text-white text-lg font-bold text-center">Indi-Genius</h3>
+                        </div>
+                    </div>
+
+                    <!-- Psi-Tech -->
+                    <div class="portfolio-card relative group rounded-xl overflow-hidden cursor-pointer aspect-square fade-up" data-dialog="dialog-scitech">
+                        <img src="img/scitech.jpg" alt="Psi-Biz-Tech" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                        <div class="portfolio-overlay absolute inset-0 bg-primary/80 flex flex-col items-center justify-center p-4">
+                            <i class="fa-solid fa-plus text-white text-3xl mb-3"></i>
+                            <h3 class="text-white text-lg font-bold text-center">&Psi;-Tech</h3>
+                        </div>
+                    </div>
+
+                    <!-- Game Theory -->
+                    <div class="portfolio-card relative group rounded-xl overflow-hidden cursor-pointer aspect-square fade-up" data-dialog="dialog-sport">
+                        <img src="img/sport.jpg" alt="Game Theory" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                        <div class="portfolio-overlay absolute inset-0 bg-primary/80 flex flex-col items-center justify-center p-4">
+                            <i class="fa-solid fa-plus text-white text-3xl mb-3"></i>
+                            <h3 class="text-white text-lg font-bold text-center leading-tight">Varun Krishnamurthy Memorial Game Theory</h3>
+                        </div>
+                    </div>
+
+                    <!-- Lieut-en-ent -->
+                    <div class="portfolio-card relative group rounded-xl overflow-hidden cursor-pointer aspect-square fade-up" data-dialog="dialog-litent">
+                        <img src="img/litent.jpg" alt="Lieut-en-ent" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                        <div class="portfolio-overlay absolute inset-0 bg-primary/80 flex flex-col items-center justify-center p-4">
+                            <i class="fa-solid fa-plus text-white text-3xl mb-3"></i>
+                            <h3 class="text-white text-lg font-bold text-center">Lieut-en-ent</h3>
+                        </div>
+                    </div>
+
+                    <!-- Major Quiz -->
+                    <div class="portfolio-card relative group rounded-xl overflow-hidden cursor-pointer aspect-square fade-up" data-dialog="dialog-gen">
+                        <img src="img/gen.jpg" alt="Major Quiz" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                        <div class="portfolio-overlay absolute inset-0 bg-primary/80 flex flex-col items-center justify-center p-4">
+                            <i class="fa-solid fa-plus text-white text-3xl mb-3"></i>
+                            <h3 class="text-white text-lg font-bold text-center">Major Quiz</h3>
+                        </div>
+                    </div>
+
+                    <!-- Magnum Open -->
+                    <div class="portfolio-card relative group rounded-xl overflow-hidden cursor-pointer aspect-square fade-up col-span-2 lg:col-span-1" data-dialog="dialog-open">
+                        <img src="img/open.jpg" alt="Magnum Open" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                        <div class="portfolio-overlay absolute inset-0 bg-primary/80 flex flex-col items-center justify-center p-4">
+                            <i class="fa-solid fa-plus text-white text-3xl mb-3"></i>
+                            <h3 class="text-white text-lg font-bold text-center">Magnum Open</h3>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- DIALOGS for UTPT Quiz Categories -->
+        <dialog id="dialog-about-utpt" class="w-full max-w-2xl rounded-xl shadow-2xl">
+            <div class="relative">
+                <button class="dialog-close absolute top-4 right-4 z-10 w-10 h-10 rounded-full bg-black/50 hover:bg-black/70 text-white flex items-center justify-center transition-colors" aria-label="Close">
+                    <i class="fa-solid fa-xmark text-lg"></i>
+                </button>
+                <img src="img/about.jpg" alt="About UTPT" class="w-full h-64 object-cover rounded-t-xl">
+                <div class="p-6 lg:p-8">
+                    <h3 class="text-2xl font-display font-bold text-dark mb-4">About UTPT</h3>
+                    <p class="text-gray-600 leading-relaxed mb-4">When one comes across the phrase 'Under the Peepal Tree', his thoughts become focused on a larger than life scene of Buddha, serenely seated under the shade of a Bodhi tree, enlightened. It is not exaggerating to say that today, the phrase 'Under the Peepal Tree' conjures similar thoughts in us. What this quiz fest has achieved is a legacy.</p>
+                    <p class="text-gray-600 leading-relaxed">Under the Peepal Tree was first held in the year 1998, by RV QuizCorp's visionary founders Avinash Mudaliar and Gopal Sreenivasan. What was then a simple idea has grown and become a quizzing mammoth it is today. UTPT, as it is fondly known as by quizzing junta has been held every year since. And today, it is Asia's largest quiz fest attracting people from all over India, both for the high standard of quizzing as well as the bountiful rewards for the winners.</p>
+                </div>
+            </div>
+        </dialog>
+
+        <dialog id="dialog-india" class="w-full max-w-2xl rounded-xl shadow-2xl">
+            <div class="relative">
+                <button class="dialog-close absolute top-4 right-4 z-10 w-10 h-10 rounded-full bg-black/50 hover:bg-black/70 text-white flex items-center justify-center transition-colors" aria-label="Close">
+                    <i class="fa-solid fa-xmark text-lg"></i>
+                </button>
+                <img src="img/india.jpg" alt="Indi-Genius" class="w-full h-64 object-cover rounded-t-xl">
+                <div class="p-6 lg:p-8">
+                    <h3 class="text-2xl font-display font-bold text-dark mb-4">Indi-Genius</h3>
+                    <p class="text-gray-600 leading-relaxed">If you're crazy about everything desi, this is the perfect quiz for you. From Ram-Leela to Ramayana, cricket wickets and election tickets, this quiz encompasses everything that makes us say "It only happens in India".</p>
+                </div>
+            </div>
+        </dialog>
+
+        <dialog id="dialog-scitech" class="w-full max-w-2xl rounded-xl shadow-2xl">
+            <div class="relative">
+                <button class="dialog-close absolute top-4 right-4 z-10 w-10 h-10 rounded-full bg-black/50 hover:bg-black/70 text-white flex items-center justify-center transition-colors" aria-label="Close">
+                    <i class="fa-solid fa-xmark text-lg"></i>
+                </button>
+                <img src="img/scitech.jpg" alt="Psi-Biz-Tech" class="w-full h-64 object-cover rounded-t-xl">
+                <div class="p-6 lg:p-8">
+                    <h3 class="text-2xl font-display font-bold text-dark mb-4">&Psi;-Biz-Tech</h3>
+                    <p class="text-gray-600 leading-relaxed">Here's where being a geek will work in your favour. If you switch on the TV only for The Discovery channel, if your magazine subscriptions include the Scientific American and if your favourite board game is Monopoly, get ready to win some serious money in this science, technology and business quiz.</p>
+                </div>
+            </div>
+        </dialog>
+
+        <dialog id="dialog-sport" class="w-full max-w-2xl rounded-xl shadow-2xl">
+            <div class="relative">
+                <button class="dialog-close absolute top-4 right-4 z-10 w-10 h-10 rounded-full bg-black/50 hover:bg-black/70 text-white flex items-center justify-center transition-colors" aria-label="Close">
+                    <i class="fa-solid fa-xmark text-lg"></i>
+                </button>
+                <img src="img/sport.jpg" alt="Game Theory" class="w-full h-64 object-cover rounded-t-xl">
+                <div class="p-6 lg:p-8">
+                    <h3 class="text-2xl font-display font-bold text-dark mb-4">Varun Krishnamurthy Memorial Game Theory</h3>
+                    <p class="text-gray-600 leading-relaxed">Find out if it was all worth it. Staying up late into the night for all those matches. Comparing team stats. Making your dream teams on fantasy leagues. Has all the stress of last overs in India-Pak matches, football penalties and nailbiting deciding sets in tennis taken a toll on you? Or will it be the reason you walk away with a fatter wallet?</p>
+                </div>
+            </div>
+        </dialog>
+
+        <dialog id="dialog-litent" class="w-full max-w-2xl rounded-xl shadow-2xl">
+            <div class="relative">
+                <button class="dialog-close absolute top-4 right-4 z-10 w-10 h-10 rounded-full bg-black/50 hover:bg-black/70 text-white flex items-center justify-center transition-colors" aria-label="Close">
+                    <i class="fa-solid fa-xmark text-lg"></i>
+                </button>
+                <img src="img/litent.jpg" alt="Lieut-en-ent" class="w-full h-64 object-cover rounded-t-xl">
+                <div class="p-6 lg:p-8">
+                    <h3 class="text-2xl font-display font-bold text-dark mb-4">Lieut-en-ent</h3>
+                    <p class="text-gray-600 leading-relaxed mb-4">Do you watch an episode a week or a season per day? Have you only watched the movie or read the books too? Do you only listen to the radio or is your ipod running out of space? If all your anwers were the latter options, then your best option would not be to "tread lightly". Lieut-en-ent quiz should be your cup o' tea.</p>
+                    <p class="text-gray-600 leading-relaxed">Bonus points if you can tell us when Leo will get his Oscar.</p>
+                </div>
+            </div>
+        </dialog>
+
+        <dialog id="dialog-gen" class="w-full max-w-2xl rounded-xl shadow-2xl">
+            <div class="relative">
+                <button class="dialog-close absolute top-4 right-4 z-10 w-10 h-10 rounded-full bg-black/50 hover:bg-black/70 text-white flex items-center justify-center transition-colors" aria-label="Close">
+                    <i class="fa-solid fa-xmark text-lg"></i>
+                </button>
+                <img src="img/gen.jpg" alt="Major Quiz" class="w-full h-64 object-cover rounded-t-xl">
+                <div class="p-6 lg:p-8">
+                    <h3 class="text-2xl font-display font-bold text-dark mb-4">Major Quiz</h3>
+                    <p class="text-gray-600 leading-relaxed">Prepare to be asked about anything and everything under the sun. Does your know(how) cover it-all? The winner of this quiz will not just be a Jack of all trades, but also a Master of them all. It's called the Major Quiz for a reason.</p>
+                </div>
+            </div>
+        </dialog>
+
+        <dialog id="dialog-open" class="w-full max-w-2xl rounded-xl shadow-2xl">
+            <div class="relative">
+                <button class="dialog-close absolute top-4 right-4 z-10 w-10 h-10 rounded-full bg-black/50 hover:bg-black/70 text-white flex items-center justify-center transition-colors" aria-label="Close">
+                    <i class="fa-solid fa-xmark text-lg"></i>
+                </button>
+                <img src="img/open.jpg" alt="Magnum Open" class="w-full h-64 object-cover rounded-t-xl">
+                <div class="p-6 lg:p-8">
+                    <h3 class="text-2xl font-display font-bold text-dark mb-4">Magnum Open</h3>
+                    <p class="text-gray-600 leading-relaxed">Hosted by the well known quizzer Nitish Khadiya, an RV Alumnus, this quiz is open to everyone. Age no bar. This is truly the baap of all quizzes. The phrase "pick on someone your own size" is redundant here.</p>
+                </div>
+            </div>
+        </dialog>
+
+        <!-- SPONSORS CTA -->
+        <section id="sponsors" class="parallax-bg py-24 lg:py-32" style="background-image: url('img/qc_banner.jpg');">
+            <div class="relative">
+                <div class="absolute inset-0 bg-dark/80"></div>
+                <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                    <h3 class="text-3xl md:text-4xl font-display font-bold text-white mb-8 fade-up">Want us to host a quiz for you?</h3>
+                    <a href="#contact" class="inline-flex items-center gap-2 bg-primary hover:bg-primary-dark text-white px-8 py-3 rounded-full text-sm font-semibold uppercase tracking-wider transition-colors shadow-lg hover:shadow-xl fade-up">
+                        Get in touch
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- BLOG -->
+        <section id="blog" class="py-20 lg:py-28 bg-gray-50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-12 fade-up">
+                    <h2 class="text-3xl md:text-4xl font-display font-bold text-dark">Our Latest Posts</h2>
+                </div>
+
+                <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+                    <a href="https://quizcorp.tumblr.com/post/112002457575/namma-bengaluru" target="_blank" class="group bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow fade-up">
+                        <div class="aspect-video overflow-hidden">
+                            <img src="img/41L2TqO.jpg" alt="Namma Bengaluru" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                        </div>
+                        <div class="p-5">
+                            <p class="text-xs text-gray-400 font-medium uppercase tracking-wider mb-2">Feb 25, 2015</p>
+                            <h3 class="text-lg font-semibold text-dark group-hover:text-primary transition-colors">Namma Bengaluru!</h3>
+                        </div>
+                    </a>
+
+                    <a href="https://quizcorp.tumblr.com/post/112001505695/fast-and-the-furious" target="_blank" class="group bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow fade-up">
+                        <div class="aspect-video overflow-hidden">
+                            <img src="img/41L2TqO.jpg" alt="Fast and the Furious" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                        </div>
+                        <div class="p-5">
+                            <p class="text-xs text-gray-400 font-medium uppercase tracking-wider mb-2">Feb 25, 2015</p>
+                            <h3 class="text-lg font-semibold text-dark group-hover:text-primary transition-colors">Fast and the Furious</h3>
+                        </div>
+                    </a>
+
+                    <a href="https://quizcorp.tumblr.com/post/111774063120/revisit-your-childhood" target="_blank" class="group bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow fade-up">
+                        <div class="aspect-video overflow-hidden">
+                            <img src="img/41L2TqO.jpg" alt="Revisit Your Childhood" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                        </div>
+                        <div class="p-5">
+                            <p class="text-xs text-gray-400 font-medium uppercase tracking-wider mb-2">Feb 22, 2015</p>
+                            <h3 class="text-lg font-semibold text-dark group-hover:text-primary transition-colors">Revisit Your Childhood</h3>
+                        </div>
+                    </a>
+
+                    <a href="https://quizcorp.tumblr.com/post/111574887515/heres-the-schedule-for-utpt-2k15-day-1-26th-feb" target="_blank" class="group bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow fade-up">
+                        <div class="aspect-video overflow-hidden">
+                            <img src="img/41L2TqO.jpg" alt="UTPT 2K15 Schedule" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                        </div>
+                        <div class="p-5">
+                            <p class="text-xs text-gray-400 font-medium uppercase tracking-wider mb-2">Feb 20, 2015</p>
+                            <h3 class="text-lg font-semibold text-dark group-hover:text-primary transition-colors">UTPT 2K15 Schedule</h3>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="text-center fade-up">
+                    <a href="https://quizcorp.tumblr.com/" target="_blank" class="inline-flex items-center gap-2 border-2 border-gray-300 hover:border-primary text-gray-600 hover:text-primary px-6 py-2.5 rounded-full text-sm font-semibold transition-colors">
+                        <i class="fa-solid fa-chevron-right"></i>
+                        View all Posts
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT -->
+        <section id="contact" class="relative bg-dark text-white py-20 lg:py-28">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-12 fade-up">
+                    <h2 class="text-3xl md:text-4xl font-display font-bold">Contact Us</h2>
+                </div>
+                <div class="flex flex-col sm:flex-row items-center justify-center gap-8 lg:gap-16 fade-up">
+                    <div class="flex items-start gap-4">
+                        <i class="fa-solid fa-location-dot text-primary text-xl mt-1"></i>
+                        <p class="text-gray-300 leading-relaxed">RV College of Engineering,<br>RV Vidyanikethan Post,<br>Mysore Road,<br>Bangalore - 560 059</p>
+                    </div>
+                    <div class="flex items-center gap-4">
+                        <i class="fa-solid fa-envelope text-primary text-xl"></i>
+                        <a href="mailto:utpt.rvquizcorp@gmail.com" class="text-gray-300 hover:text-primary transition-colors">utpt.rvquizcorp@gmail.com</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-darker text-gray-400">
+        <!-- Top Footer -->
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-16">
+            <div class="grid md:grid-cols-3 gap-8 lg:gap-12">
+                <div>
+                    <h5 class="text-white font-semibold text-lg mb-4">R V QuizCorp</h5>
+                    <p class="text-sm leading-relaxed">RV QuizCorp is the quiz club of R.V College of Engineering, one of the finest private institutions in the country. Since its inception in 1997, RV Quizcorp has evolved into one of the most well-known clubs in national quizzing circuits. RV Quizcorp has created and nurtured many quizzers and quizmasters who are highly respected across the country.</p>
+                </div>
+                <div></div>
+                <div>
+                    <h5 class="text-white font-semibold text-lg mb-4">Contact Info</h5>
+                    <div class="space-y-3 text-sm">
+                        <div class="flex items-start gap-3">
+                            <i class="fa-solid fa-location-dot text-primary mt-1"></i>
+                            <span>R V College of Engineering,<br>R V Vidyanikethan Post,<br>Mysore Road<br>Bangalore - 560 059</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <i class="fa-solid fa-envelope text-primary"></i>
+                            <a href="mailto:utpt.rvquizcorp@gmail.com" class="hover:text-primary transition-colors">utpt.rvquizcorp@gmail.com</a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
 
-    </div>
-</div>
-<!-- /HEADER -->
-
-<!-- MAIN -->
-<div class="l-main" style="margin-bottom: 381px;">
-    <div class="l-main-h">
-
-        <!-- page: FULL SCREEN SLIDER -->
-        <section id="home" class="l-section" style="margin-bottom: 80px; height: 928px;">
-
-            <div class="l-subsection">
-                <div class="l-subsection-h" style="height: 100%;">
-                    <div class="l-subsection-hh g-html i-cf" style="height: 100%;">
-
-                        <div class="us_supersized">
-                            <a id="prevslide" class="load-item" style="display: block;"><i class="fa fa-chevron-left"></i></a>
-                            <a id="nextslide" class="load-item" style="display: block;"><i class="fa fa-chevron-right"></i></a>
-                            <div class="slidecaption">
-                                <div id="slidecaption"><h1 class="home-heading"><span class="home-heading-line type_dark_bg">R V College Of Engineering</span><br><span class="home-heading-line type_light_bg">R V QuizCorp</span></h1><a class="g-btn type_primary size_big" href="http://www.rvquizcorp.com/#about"><span><i class="fa fa-arrow-down"></i>Learn More</span></a></div>
-                            </div>
-                        <ul id="supersized" class="quality" style="visibility: visible;"><li class="slide-0 activeslide"><a target="_blank"><img src="./static/rvquizcorp/img/qc_banner.jpg" style="width: 1824px; height: 1222.08px; left: 0px; top: -147px;"></a></li></ul></div>
-
-                    </div>
+        <!-- Bottom Footer -->
+        <div class="border-t border-white/10">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+                <p class="text-sm">&copy; 2026 RV QuizCorp</p>
+                <div class="flex items-center gap-4">
+                    <a href="https://www.facebook.com/RvQuizcorp" target="_blank" class="w-10 h-10 rounded-full bg-white/10 hover:bg-primary flex items-center justify-center transition-colors" aria-label="Facebook">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                    <a href="https://twitter.com/rvquizcorp" target="_blank" class="w-10 h-10 rounded-full bg-white/10 hover:bg-primary flex items-center justify-center transition-colors" aria-label="Twitter">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+                    <a href="https://vimeo.com/rvquizcorp" target="_blank" class="w-10 h-10 rounded-full bg-white/10 hover:bg-primary flex items-center justify-center transition-colors" aria-label="Vimeo">
+                        <i class="fa-brands fa-vimeo-v"></i>
+                    </a>
+                    <a href="https://quizcorp.tumblr.com/" target="_blank" class="w-10 h-10 rounded-full bg-white/10 hover:bg-primary flex items-center justify-center transition-colors" aria-label="Tumblr">
+                        <i class="fa-brands fa-tumblr"></i>
+                    </a>
                 </div>
-            </div>
-
-        </section>
-        <script type="text/javascript">
-            jQuery(function($){
-                $.supersized({
-                    // Functionality
-                    slide_interval : 5000, // Length between transitions
-                    transition : 1, // 0-None, 1-Fade, 2-Slide Top, 3-Slide Right, 4-Slide Bottom, 5-Slide Left, 6-Carousel Right, 7-Carousel Left
-                    transition_speed : 400, // Speed of transition
-                    // Components
-                    slides  : [ // Slideshow Images
-                        {image : "./static/rvquizcorp/img/qc_banner.jpg", title : '<h1 class="home-heading"><span class="home-heading-line type_dark_bg">R V College Of Engineering</span><br><span class="home-heading-line type_light_bg">R V QuizCorp</span></h1><a class="g-btn type_primary size_big" href="#about"><span><i class="fa fa-arrow-down"></i>Learn More</span></a>', url : ''}
-                        // {image : "/static/rvquizcorp/img/utpt2015.jpg", title : '<h1 class="home-heading"><span class="home-heading-line type_primary_bg">Under The Peepal Tree 2014</span><br><span class="home-heading-line type_dark_bg">Time to roll the dice</span></h1><a class="g-btn type_default" href="#utpt"><span><i class="fa fa-arrow-down"></i>Learn More</span></a></span></a>', url : ''}
-                    ]
-                });
-            });
-        </script>
-
-        <!-- page: ABOUT -->
-        <section id="about" class="l-section">
-
-            <div class="l-subsection">
-                <div class="l-subsection-h">
-                    <div class="l-subsection-hh g-html i-cf">
-
-                        <h2><strong>About R V QuizCorp</strong></h2>
-
-                        <div class="g-hr type_invisible size_small"></div>
-
-                        <p class="subtitle">R V QuizCorp is one of India's <strong class="highlight">Biggest quiz clubs</strong><br>and conducts <strong class="highlight">Asia's Largest Quiz Fest </strong>Under The Peepal Tree</p>
-
-                        <div class="g-hr type_invisible"></div>
-
-                        <div class="g-cols">
-                            <div class="one-half">
-                                <p class="align_left">R V QuizCorp is the quiz club of R V College of Engineering, one of the finest private institutions in the country. Since its inception in 1998, RVQC has evolved into one of the best known clubs in national quizzing circuits. Being one of the few quiz clubs in the country run entirely by students, we have created and nurtured many quizzers and quizmasters who are highly respected across the country. Our members assemble week after week at club’s most popular hangout, “On the Rocks” in Cubbon Park, to discuss and plan future quizzes and to share interesting ‘fundae’. To promote quizzing culture in RVCE and for the sheer thrill of quizzing, the members of RVQC also organise quizzes every month on topics as varied as sports, music, movies and politics.</p>
-                            </div>
-                            <div class="one-half">
-                                <p class="align_left">RVCE is the only institution in the country to have sent three teams to the prestigious BBC University Challenge Quiz hosted by Siddharth Basu on BBC World. A team consisting of final year students was invited for an exhibition round to kick off the inaugural season of the BBC University Challenge, where they were pitted against Glasgow University, U.K. Since then, two pre-final year teams have made it to the televised rounds in the inaugural season (2003) and the second season (2004). RVQC has dominated the quizzing scene not only in Bangalore but all over the country, winning quizzes at IITM, NLSIU, VIT, and NITK to name a few places. QuizCorp has also gained a reputation for conducting mind-boggling quizzes, having had some of India's most renowned quizmasters among the ranks at our prestigious club.</p>
-                            </div>
-                        </div>
-                        <div class="g-hr type_invisible"></div>
-
-                        <div class="g-cols">
-                            <div class="first-child">
-                                <div class="w-video ratio_16-9">
-                                    <div class="w-video-h">
-                                        <iframe src="./static/rvquizcorp/109492542.html" width="500" height="281" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe> <p><a href="http://vimeo.com/109492542">RV QuizCorp: Welcome Freshers of 2014!</a> from <a href="http://vimeo.com/rvquizcorp">RV Quizcorp</a> on <a href="https://vimeo.com/">Vimeo</a>.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-
-            <div id="parallax_subsection_0" class="l-subsection color_dark with_parallax" style="background-image:url(/static/rvquizcorp/img/what_we_do.jpg);">
-                <div class="l-subsection-h">
-                    <div class="l-subsection-hh g-html i-cf">
-
-                        <p class="subtitle">What do we do?</p>
-                        <h3 class="highlight"><strong>We Quiz. We Learn. We Play.</strong></h3>
-
-                        <div class="g-hr type_invisible"></div>
-
-                        <div class="g-cols">
-                            <div class="one-third">
-
-                                <div class="w-iconbox iconpos_top with_circle">
-                                    <div class="w-iconbox-h">
-                                        <div class="w-iconbox-link">
-                                            <div class="w-iconbox-icon">
-                                                <i class="fa fa-thumbs-up"></i>
-                                            </div>
-                                            <h4 class="w-iconbox-title">We Quiz</h4>
-                                        </div>
-                                        <div class="w-iconbox-text">
-                                            <p>Members of RV QuizCorp have a reputation for being the best of best all over India</p>
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
-                            <div class="one-third">
-
-                                <div class="w-iconbox iconpos_top with_circle">
-                                    <div class="w-iconbox-h">
-                                        <div class="w-iconbox-link">
-                                            <div class="w-iconbox-icon">
-                                                <i class="fa fa-rocket"></i>
-                                            </div>
-                                            <h4 class="w-iconbox-title">UTPT</h4>
-                                        </div>
-                                        <div class="w-iconbox-text">
-                                            <p>Our annual flagship event Under The Peepal Tree is Asia's Largest Quiz Fest.</p>
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
-                            <div class="one-third">
-
-                                <div class="w-iconbox iconpos_top with_circle">
-                                    <div class="w-iconbox-h">
-                                        <div class="w-iconbox-link">
-                                            <div class="w-iconbox-icon">
-                                                <i class="fa fa-heart"></i>
-                                            </div>
-                                            <h4 class="w-iconbox-title">Loads Of Fun!</h4>
-                                        </div>
-                                        <div class="w-iconbox-text">
-                                            <p>Quizzing is something we love to do and are passionate about. We quiz to live and live to quiz.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-
-        </section>
-
-        <!-- page: UTPT -->
-        <section id="utpt" class="l-section">
-            <div id="parallax_subsection_1" class="l-subsection">
-                <div class="l-subsection-h">
-                    <div class="l-subsection-hh g-html i-cf">
-                        <h2>Under the Peepal Tree is <strong>Asia's</strong> largest quiz fest<br> Be a part of 3 days of quizzing excellence!</h2>
-
-                        <h5>Countdown to UTPT 2019</h5>
-                        <div class="g-cols">
-                            <div class="first-child">
-                                <div class="w-counter">
-                                    <div class="w-counter-h">
-                                        <!-- <div class="w-counter-number">Sometime Next March</div> -->
-                                        Sometime Next March
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="g-hr type_invisible"></div>
-
-                        <div class="g-cols">
-                            <div class="first-child">
-                                <div class="w-video ratio_16-9">
-                                    <div class="w-video-h">
-                                        <iframe src="./static/rvquizcorp/155788038.html" width="300" height="169" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe> <p><a href="http://vimeo.com/155788038">Under The People Tree - 2016 Teaser</a> from <a href="http://vimeo.com/rvquizcorp">RV Quizcorp</a> on <a href="https://vimeo.com/">Vimeo</a>.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="l-subsection full_width full_height">
-                <div class="l-subsection-h">
-                    <div class="l-subsection-hh g-html i-cf">
-
-                        <div class="w-portfolio">
-                            <div class="w-portfolio-h">
-                                <div class="w-portfolio-list">
-                                    <div class="w-portfolio-list-h">
-
-                                        <div class="w-portfolio-item">
-                                            <div class="w-portfolio-item-h">
-                                                <a class="w-portfolio-item-anchor" href="javascript:void(0);">
-                                                    <div class="w-portfolio-item-image" style="background-image:url(/static/rvquizcorp/img/about.jpg);"></div>
-                                                    <div class="w-portfolio-item-meta">
-                                                        <h2 class="w-portfolio-item-title">About UTPT</h2>
-                                                    </div>
-                                                    <div class="w-portfolio-item-hover"><i class="fa fa-plus"></i></div>
-                                                </a>
-
-                                                <div class="w-portfolio-item-details" style="display: none;">
-                                                    <div class="w-portfolio-item-details-h">
-                                                        <div class="w-portfolio-item-details-content">
-                                                            <div class="w-portfolio-item-details-content-preview">
-                                                                <img src="./static/rvquizcorp/img/about.jpg" alt="">
-                                                            </div>
-                                                            <div class="w-portfolio-item-details-content-text">
-                                                                <h3>About UTPT</h3>
-                                                                <p>When one comes across the phrase ‘Under the Peepal Tree’, his thoughts become focused on a larger than life scene of Buddha, serenely seated under the shade of a Bodhi tree, enlightened. It is not exaggerating to say that today, the phrase ‘Under the Peepal Tree’ conjures similar thoughts in us. What this quiz fest has achieved is a legacy.</p>
-                                                                <p>Under the Peepal Tree was first held in the year 1998, by RV QuizCorp’s visionary founders Avinash Mudaliar and Gopal Sreenivasan. What was then a simple idea has grown and become a quizzing mammoth it is today. UTPT, as it is fondly known as by quizzing junta has been held every year since. And today, it is Asia’s largest quiz fest attracting people from all over India, both for the high standard of quizzing as well as the bountiful rewards for the winners.</p>
-                                                            </div>
-                                                        </div>
-
-                                                        <div class="w-portfolio-item-details-close"></div>
-                                                        <div class="w-portfolio-item-details-arrow to_next"><i class="fa fa-angle-right"></i></div>
-
-                                                    </div>
-                                                </div>
-
-                                            </div>
-                                        </div>
-
-                                        <div class="w-portfolio-item">
-                                            <div class="w-portfolio-item-h">
-                                                <a class="w-portfolio-item-anchor" href="javascript:void(0);">
-                                                    <div class="w-portfolio-item-image" style="background-image:url(/static/rvquizcorp/img/india.jpg);"></div>
-                                                    <div class="w-portfolio-item-meta">
-                                                        <h2 class="w-portfolio-item-title">Indi-Genius</h2>
-                                                    </div>
-                                                    <div class="w-portfolio-item-hover"><i class="fa fa-plus"></i></div>
-                                                </a>
-
-                                                <div class="w-portfolio-item-details" style="display: none;">
-                                                    <div class="w-portfolio-item-details-h">
-                                                        <div class="w-portfolio-item-details-content">
-                                                            <div class="w-portfolio-item-details-content-preview">
-                                                                <img src="./static/rvquizcorp/img/india.jpg" alt="">
-                                                            </div>
-                                                            <div class="w-portfolio-item-details-content-text">
-                                                                <h3>Indi-Genius</h3>
-                                                                <p>If you’re crazy about everything desi, this is the perfect quiz for you. From Ram-Leela to Ramayana, cricket wickets and election tickets, this quiz encompasses everything that makes us say “It only happens in India”.</p>
-                                                            </div>
-                                                        </div>
-
-                                                        <div class="w-portfolio-item-details-close"></div>
-                                                        <div class="w-portfolio-item-details-arrow to_prev"><i class="fa fa-angle-left"></i></div>
-                                                        <div class="w-portfolio-item-details-arrow to_next"><i class="fa fa-angle-right"></i></div>
-
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="w-portfolio-item">
-                                            <div class="w-portfolio-item-h">
-                                                <a class="w-portfolio-item-anchor" href="javascript:void(0);">
-                                                    <div class="w-portfolio-item-image" style="background-image:url(/static/rvquizcorp/img/scitech.jpg);"></div>
-                                                    <div class="w-portfolio-item-meta">
-                                                        <h2 class="w-portfolio-item-title"> Ψ-Tech</h2>
-                                                    </div>
-                                                    <div class="w-portfolio-item-hover"><i class="fa fa-plus"></i></div>
-                                                </a>
-
-                                                <div class="w-portfolio-item-details" style="display: none;">
-                                                    <div class="w-portfolio-item-details-h">
-                                                        <div class="w-portfolio-item-details-content">
-                                                            <div class="w-portfolio-item-details-content-preview">
-                                                                <img src="./static/rvquizcorp/img/scitech.jpg" alt="">
-                                                            </div>
-                                                            <div class="w-portfolio-item-details-content-text">
-                                                                <h3> Ψ-Biz-Tech</h3>
-                                                                <p>Here’s where being a geek will work in your favour. If you switch on the TV only for The Discovery channel, if your magazine subscriptions include the Scientific American and if your favourite board game is Monopoly, get ready to win some serious money in this science, technology and business quiz.</p>
-                                                            </div>
-                                                        </div>
-
-                                                        <div class="w-portfolio-item-details-close"></div>
-                                                        <div class="w-portfolio-item-details-arrow to_prev"><i class="fa fa-angle-left"></i></div>
-                                                        <div class="w-portfolio-item-details-arrow to_next"><i class="fa fa-angle-right"></i></div>
-
-                                                    </div>
-                                                </div>
-
-                                            </div>
-                                        </div>
-
-                                     <!--   <div class="w-portfolio-item">
-                                            <div class="w-portfolio-item-h">
-                                                <a class="w-portfolio-item-anchor" href="javascript:void(0);">
-                                                    <div class="w-portfolio-item-image" style="background-image:url(/static/rvquizcorp/img/karnataka.jpg);"></div>
-                                                    <div class="w-portfolio-item-meta">
-                                                        <h2 class="w-portfolio-item-title">Sakkath Sawaal</h2>
-                                                    </div>
-                                                    <div class="w-portfolio-item-hover"><i class="fa fa-plus"></i></div>
-                                                </a>
-
-                                                <div class="w-portfolio-item-details" style="display: none;">
-                                                    <div class="w-portfolio-item-details-h">
-                                                        <div class="w-portfolio-item-details-content">
-                                                            <div class="w-portfolio-item-details-content-preview">
-                                                                <img src="/static/rvquizcorp/img/karnataka.jpg" alt="">
-                                                            </div>
-                                                            <div class="w-portfolio-item-details-content-text">
-                                                                <h3>Sakkath Sawaal</h3>
-                                                                <p>If you are a proud Kannadiga and think that you know enough about our ‘Gandhada Gudi’ and ‘Kannada Nudi’, this quiz is for you. From CSP’s witty dialogues in his serials to romantic lines from K.S Narasimhaswamy’s poems to the beautiful architecture of the Badami caves to Annavru’s signature dialogues and classic songs, this quiz will test and enrich your knowledge about our land and its beautiful language.</p>
-                                                                <p>ಬನ್ನಿ, "ಅರಳಿ ಮರದ ಕೆಳಗೆ 2014" ರಸಪ್ರಶ್ನೆ ಸ್ಪರ್ಧೆಯಲ್ಲಿ ಪಾಲ್ಗೊಳ್ಳಿ.</p>
-                                                            </div>
-                                                        </div>
-
-                                                        <div class="w-portfolio-item-details-close"></div>
-                                                        <div class="w-portfolio-item-details-arrow to_prev"><i class="fa fa-angle-left"></i></div>
-                                                        <div class="w-portfolio-item-details-arrow to_next"><i class="fa fa-angle-right"></i></div>
-
-                                                    </div>
-                                                </div>
-
-                                            </div>
-                                        </div>  -->
-
-                                        <div class="w-portfolio-item">
-                                            <div class="w-portfolio-item-h">
-                                                <a class="w-portfolio-item-anchor" href="javascript:void(0);">
-                                                    <div class="w-portfolio-item-image" style="background-image:url(/static/rvquizcorp/img/sport.jpg);"></div>
-                                                    <div class="w-portfolio-item-meta">
-                                                        <h2 class="w-portfolio-item-title">Varun Krishnamurthy Memorial Game Theory</h2>
-                                                    </div>
-                                                    <div class="w-portfolio-item-hover"><i class="fa fa-plus"></i></div>
-                                                </a>
-
-                                                <div class="w-portfolio-item-details" style="display: none;">
-                                                    <div class="w-portfolio-item-details-h">
-                                                        <div class="w-portfolio-item-details-content">
-                                                            <div class="w-portfolio-item-details-content-preview">
-                                                                <img src="./static/rvquizcorp/img/sport.jpg" alt="">
-                                                            </div>
-                                                            <div class="w-portfolio-item-details-content-text">
-                                                                <h3>Varun Krishnamurthy Memorial Game Theory</h3>
-                                                                <p>Find out if it was all worth it. Staying up late into the night for all those matches. Comparing team stats. Making your dream teams on fantasy leagues. Has all the stress of last overs in India-Pak matches, football penalties and nailbiting deciding sets in tennis taken a toll on you? Or will it be the reason you walk away with a fatter wallet?</p>
-                                                            </div>
-                                                        </div>
-
-                                                        <div class="w-portfolio-item-details-close"></div>
-                                                        <div class="w-portfolio-item-details-arrow to_prev"><i class="fa fa-angle-left"></i></div>
-                                                        <div class="w-portfolio-item-details-arrow to_next"><i class="fa fa-angle-right"></i></div>
-
-                                                    </div>
-                                                </div>
-
-                                            </div>
-                                        </div>
-                                        <div class="w-portfolio-item">
-                                            <div class="w-portfolio-item-h">
-                                                <a class="w-portfolio-item-anchor" href="javascript:void(0);">
-                                                    <div class="w-portfolio-item-image" style="background-image:url(/static/rvquizcorp/img/litent.jpg);"></div>
-                                                    <div class="w-portfolio-item-meta">
-                                                        <h2 class="w-portfolio-item-title">Lieut-en-ent</h2>
-                                                    </div>
-                                                    <div class="w-portfolio-item-hover"><i class="fa fa-plus"></i></div>
-                                                </a>
-
-                                                <div class="w-portfolio-item-details" style="display: none;">
-                                                    <div class="w-portfolio-item-details-h">
-                                                        <div class="w-portfolio-item-details-content">
-                                                            <div class="w-portfolio-item-details-content-preview">
-                                                                <img src="./static/rvquizcorp/img/litent.jpg" alt="">
-                                                            </div>
-                                                            <div class="w-portfolio-item-details-content-text">
-                                                                <h3>Lieut-en-ent</h3>
-                                                                <p>Do you watch an episode a week or a season per day? Have you only watched the movie or read the books too? Do you only listen to the radio or is your ipod running out of space? If all your anwers were the latter options, then your best option would not be to “tread lightly”. Lieut-en-ent quiz should be your cup o’ tea.</p>
-                                                                <p>Bonus points if you can tell us when Leo will get his Oscar.</p>
-                                                            </div>
-                                                        </div>
-
-                                                        <div class="w-portfolio-item-details-close"></div>
-                                                        <div class="w-portfolio-item-details-arrow to_prev"><i class="fa fa-angle-left"></i></div>
-                                                        <div class="w-portfolio-item-details-arrow to_next"><i class="fa fa-angle-right"></i></div>
-
-                                                    </div>
-                                                </div>
-
-                                            </div>
-                                        </div>
-
-                                        <div class="w-portfolio-item">
-                                            <div class="w-portfolio-item-h">
-                                                <a class="w-portfolio-item-anchor" href="javascript:void(0);">
-                                                    <div class="w-portfolio-item-image" style="background-image:url(/static/rvquizcorp/img/gen.jpg);"></div>
-                                                    <div class="w-portfolio-item-meta">
-                                                        <h2 class="w-portfolio-item-title">Major Quiz</h2>
-                                                    </div>
-                                                    <div class="w-portfolio-item-hover"><i class="fa fa-plus"></i></div>
-                                                </a>
-
-                                                <div class="w-portfolio-item-details" style="display: none;">
-                                                    <div class="w-portfolio-item-details-h">
-                                                        <div class="w-portfolio-item-details-content">
-                                                            <div class="w-portfolio-item-details-content-preview">
-                                                                <img src="./static/rvquizcorp/img/gen.jpg" alt="">
-                                                            </div>
-                                                            <div class="w-portfolio-item-details-content-text">
-                                                                <h3>Major Quiz</h3>
-                                                                <p>Prepare to be asked about anything and everything under the sun. Does your know(how) cover it-all? The winner of this quiz will not just be a Jack of all trades, but also a Master of them all. It’s called the Major Quiz for a reason.</p>
-                                                            </div>
-                                                        </div>
-
-                                                        <div class="w-portfolio-item-details-close"></div>
-                                                        <div class="w-portfolio-item-details-arrow to_prev"><i class="fa fa-angle-left"></i></div>
-                                                        <div class="w-portfolio-item-details-arrow to_next"><i class="fa fa-angle-right"></i></div>
-
-                                                    </div>
-                                                </div>
-
-                                            </div>
-                                        </div>
-
-                                        <div class="w-portfolio-item">
-                                            <div class="w-portfolio-item-h">
-                                                <a class="w-portfolio-item-anchor" href="javascript:void(0);">
-                                                    <div class="w-portfolio-item-image" style="background-image:url(/static/rvquizcorp/img/open.jpg);"></div>
-                                                    <div class="w-portfolio-item-meta">
-                                                        <h2 class="w-portfolio-item-title">Magnum Open</h2>
-                                                    </div>
-                                                    <div class="w-portfolio-item-hover"><i class="fa fa-plus"></i></div>
-                                                </a>
-
-                                                <div class="w-portfolio-item-details" style="display: none;">
-                                                    <div class="w-portfolio-item-details-h">
-                                                        <div class="w-portfolio-item-details-content">
-                                                            <div class="w-portfolio-item-details-content-preview">
-                                                                <img src="./static/rvquizcorp/img/open.jpg" alt="">
-                                                            </div>
-                                                            <div class="w-portfolio-item-details-content-text">
-                                                                <h3>Magnum Open</h3>
-                                                                <p>Hosted by the well known quizzer Nitish Khadiya, an RV Alumnus, this quiz is open to everyone. Age no bar. This is truly the baap of all quizzes. The phrase “pick on someone your own size” is redundant here.</p>
-                                                            </div>
-                                                        </div>
-
-                                                        <div class="w-portfolio-item-details-close"></div>
-                                                        <div class="w-portfolio-item-details-arrow to_prev"><i class="fa fa-angle-left"></i></div>
-                                                    </div>
-                                                </div>
-
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- page: SERVICES -->
-        <section id="sponsors" class="l-section">
-            <div id="parallax_subsection_2" class="l-subsection color_dark with_parallax" style="background-image:url(/static/rvquizcorp/img/host_a_quiz.jpg);">
-                <div class="l-subsection-h">
-                    <div class="l-subsection-hh g-html i-cf">
-
-                        <h3><strong>Want us to host a quiz for you?</strong></h3>
-
-                        <a class="g-btn type_primary" href="http://www.rvquizcorp.com/#contact"><span>Get in touch</span></a>
-
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- page: BLOG -->
-        <section id="blog" class="l-section">
-
-            <div class="l-subsection">
-                <div class="l-subsection-h">
-                    <div class="l-subsection-hh g-html i-cf">
-
-                        <h2>Our Latest Posts</h2>
-
-                        <div class="g-hr type_invisible"></div>
-
-                        <div class="w-blog imgpos_atleft more_hidden">
-                            <div class="w-blog-h">
-                                <div class="w-blog-list">
-                                    
-                                        <div class="w-blog-entry">
-                                            <div class="w-blog-entry-h">
-                                                <a class="w-blog-entry-link" href="https://quizcorp.tumblr.com/post/112002457575/namma-bengaluru">
-                                                    <div class="w-blog-entry-preview">
-                                                        <img src="./static/rvquizcorp/img/41L2TqO.jpg" alt="">
-                                                    </div>
-
-                                                    <h2 class="w-blog-entry-title">
-                                                        <span class="w-blog-entry-title-h">Namma Bengaluru!</span>
-                                                    </h2>
-                                                </a>
-                                                <div class="w-blog-entry-body">
-                                                    <div class="w-blog-entry-meta">
-                                                        <div class="w-blog-entry-meta-date">
-                                                            <span class="w-blog-entry-meta-date-month">Feb</span>
-                                                            <span class="w-blog-entry-meta-date-day">25</span>
-                                                            <span class="w-blog-entry-meta-date-year">2015</span>
-                                                        </div>
-                                                    </div>
-
-                                                    <div class="w-blog-entry-short">
-                                                        <p></p>
-                                                    </div>
-
-                                                </div>
-                                            </div>
-                                        </div>
-                                    
-                                        <div class="w-blog-entry">
-                                            <div class="w-blog-entry-h">
-                                                <a class="w-blog-entry-link" href="https://quizcorp.tumblr.com/post/112001505695/fast-and-the-furious">
-                                                    <div class="w-blog-entry-preview">
-                                                        <img src="./static/rvquizcorp/img/41L2TqO.jpg" alt="">
-                                                    </div>
-
-                                                    <h2 class="w-blog-entry-title">
-                                                        <span class="w-blog-entry-title-h">Fast and the Furious</span>
-                                                    </h2>
-                                                </a>
-                                                <div class="w-blog-entry-body">
-                                                    <div class="w-blog-entry-meta">
-                                                        <div class="w-blog-entry-meta-date">
-                                                            <span class="w-blog-entry-meta-date-month">Feb</span>
-                                                            <span class="w-blog-entry-meta-date-day">25</span>
-                                                            <span class="w-blog-entry-meta-date-year">2015</span>
-                                                        </div>
-                                                    </div>
-
-                                                    <div class="w-blog-entry-short">
-                                                        <p></p>
-                                                    </div>
-
-                                                </div>
-                                            </div>
-                                        </div>
-                                    
-                                        <div class="w-blog-entry">
-                                            <div class="w-blog-entry-h">
-                                                <a class="w-blog-entry-link" href="https://quizcorp.tumblr.com/post/111774063120/revisit-your-childhood">
-                                                    <div class="w-blog-entry-preview">
-                                                        <img src="./static/rvquizcorp/img/41L2TqO.jpg" alt="">
-                                                    </div>
-
-                                                    <h2 class="w-blog-entry-title">
-                                                        <span class="w-blog-entry-title-h">Revisit Your Childhood</span>
-                                                    </h2>
-                                                </a>
-                                                <div class="w-blog-entry-body">
-                                                    <div class="w-blog-entry-meta">
-                                                        <div class="w-blog-entry-meta-date">
-                                                            <span class="w-blog-entry-meta-date-month">Feb</span>
-                                                            <span class="w-blog-entry-meta-date-day">22</span>
-                                                            <span class="w-blog-entry-meta-date-year">2015</span>
-                                                        </div>
-                                                    </div>
-
-                                                    <div class="w-blog-entry-short">
-                                                        <p></p>
-                                                    </div>
-
-                                                </div>
-                                            </div>
-                                        </div>
-                                    
-                                        <div class="w-blog-entry">
-                                            <div class="w-blog-entry-h">
-                                                <a class="w-blog-entry-link" href="https://quizcorp.tumblr.com/post/111574887515/heres-the-schedule-for-utpt-2k15-day-1-26th-feb">
-                                                    <div class="w-blog-entry-preview">
-                                                        <img src="./static/rvquizcorp/img/41L2TqO.jpg" alt="">
-                                                    </div>
-
-                                                    <h2 class="w-blog-entry-title">
-                                                        <span class="w-blog-entry-title-h">Blog Post On Feb 20 2015</span>
-                                                    </h2>
-                                                </a>
-                                                <div class="w-blog-entry-body">
-                                                    <div class="w-blog-entry-meta">
-                                                        <div class="w-blog-entry-meta-date">
-                                                            <span class="w-blog-entry-meta-date-month">Feb</span>
-                                                            <span class="w-blog-entry-meta-date-day">20</span>
-                                                            <span class="w-blog-entry-meta-date-year">2015</span>
-                                                        </div>
-                                                    </div>
-
-                                                    <div class="w-blog-entry-short">
-                                                        <p></p>
-                                                    </div>
-
-                                                </div>
-                                            </div>
-                                        </div>
-                                    
-
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="g-hr type_invisible"></div>
-
-                        <a class="g-btn type_default size_small" href="http://quizcorp.tumblr.com/"><span><i class="fa fa-chevron-right"></i>View all Posts</span></a>
-
-                    </div>
-                </div>
-            </div>
-
-        </section>
-
-        <!-- page: CONTACT -->
-        <section id="contact" class="l-section">
-            <div class="l-subsection color_dark" style="background-image:url(/static/rvquizcorp/img/contact_us.jpg);">
-                <div class="l-subsection-h">
-                    <div class="l-subsection-hh g-html i-cf">
-
-                        <h2><strong>Contact Us</strong></h2>
-
-                        <div class="w-contacts">
-                            <div class="w-contacts-h">
-                                <div class="w-contacts-list">
-                                    <div class="w-contacts-item">
-                                        <i class="fa fa-map-marker"></i>
-                                        <span class="w-contacts-item-value">RV College of Engineering, RV Vidyanikethan Post, Mysore Road, Bangalore - 560 059</span>
-                                    </div>
-                                    <br>
-                                    <div class="w-contacts-item">
-                                        <i class="fa fa-envelope-o"></i>
-                                        <span class="w-contacts-item-value"><a href="mailto:utpt.rvquizcorp@gmail.com">utpt.rvquizcorp@gmail.com</a></span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-
-            <!-- <div class="l-subsection full_width full_height">
-                <div class="l-subsection-h">
-                    <div class="l-subsection-hh g-html i-cf">
-
-                        <div class="w-map">
-                            <div class="w-map-h" style="height: 360px;">
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </div> -->
-        </section>
-
-    </div>
-</div>
-<!-- /MAIN -->
-
-<!-- FOOTER -->
-<div class="l-footer">
-    <div class="l-footer-h">
-
-        <!-- subfooter: top -->
-        <div class="l-subfooter at_top">
-            <div class="l-subfooter-h">
-
-                <div class="g-cols">
-                    <div class="one-third">
-                        <div class="widget">
-
-                            <h5>R V QuizCorp</h5>
-                            <p>RV QuizCorp is the quiz club of R.V College of Engineering, one of the finest private institutions in the country. Since its inception in 1997, RV Quizcorp has evolved into one of the most well-known clubs in national quizzing circuits. RV Quizcorp has created and nurtured many quizzers and quizmasters who are highly respected across the country.</p>
-                        </div>
-                    </div>
-
-                    <div class="one-third">
-                        <h5></h5>
-                        <div class="widget"></div>
-                    </div>
-
-                    <div class="one-third">
-                        <div class="widget">
-                            <h5>Contact Info</h5>
-                            <div class="w-contacts">
-                                <div class="w-contacts-h">
-                                    <div class="w-contacts-list">
-                                        <div class="w-contacts-item">
-                                            <i class="fa fa-map-marker"></i>
-                                            <span class="w-contacts-item-value">R V College of Engineering,<br>R V Vidyanikethan Post,<br>Mysore Road<br>Bangalore - 560 059</span>
-                                        </div>
-                                        <div class="w-contacts-item">
-                                            <i class="fa fa-envelope-o"></i>
-                                            <span class="w-contacts-item-value"><a href="mailto:utpt.rvquizcorp@gmail.com">utpt.rvquizcorp@gmail.com</a></span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
             </div>
         </div>
+    </footer>
 
-        <!-- subfooter: bottom -->
-        <div class="l-subfooter at_bottom">
-            <div class="l-subfooter-h i-cf">
+    <!-- Scroll to Top Button -->
+    <button id="scroll-top" class="fixed bottom-6 right-6 z-40 w-12 h-12 rounded-full bg-primary hover:bg-primary-dark text-white shadow-lg flex items-center justify-center transition-all opacity-0 translate-y-4 pointer-events-none" aria-label="Scroll to top">
+        <i class="fa-solid fa-chevron-up"></i>
+    </button>
 
-                <div class="w-copyright">2018 RV QuizCorp</div>
-
-                <div class="w-socials size_normal">
-                    <div class="w-socials-h">
-                        <div class="w-socials-list">
-
-                            <div class="w-socials-item facebook">
-                                <a class="w-socials-item-link" target="_blank" href="http://www.facebook.com/RvQuizcorp">
-                                    <i class="fa fa-facebook"></i>
-                                </a>
-                                <div class="w-socials-item-popup">
-                                    <div class="w-socials-item-popup-h">
-                                        <span class="w-socials-item-popup-text">Facebook</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="w-socials-item twitter">
-                                <a class="w-socials-item-link" target="_blank" href="https://twitter.com/rvquizcorp">
-                                    <i class="fa fa-twitter"></i>
-                                </a>
-                                <div class="w-socials-item-popup">
-                                    <div class="w-socials-item-popup-h">
-                                        <span class="w-socials-item-popup-text">Twitter</span>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="w-socials-item vimeo">
-                                <a class="w-socials-item-link" target="_blank" href="https://vimeo.com/rvquizcorp">
-                                    <i class="fa fa-vimeo-square"></i>
-                                </a>
-                                <div class="w-socials-item-popup">
-                                    <div class="w-socials-item-popup-h">
-                                        <span class="w-socials-item-popup-text">Vimeo</span>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="w-socials-item tumblr">
-                                <a class="w-socials-item-link" target="_blank" href="http://quizcorp.tumblr.com/">
-                                    <i class="fa fa-tumblr"></i>
-                                </a>
-                                <div class="w-socials-item-popup">
-                                    <div class="w-socials-item-popup-h">
-                                        <span class="w-socials-item-popup-text">Tumblr</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-
-    </div>
-</div>
-<!-- /FOOTER -->
-
-<a class="w-toplink active" href="http://www.rvquizcorp.com/#"><i class="fa fa-chevron-up"></i></a>
-
-
-
-</body></html>
+    <script src="js/main.js"></script>
+</body>
+</html>
